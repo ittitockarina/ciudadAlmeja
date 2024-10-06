@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import WaterView from '../views/water/WaterView.vue'
+import AnimationLight from '@/components/AnimationLight.vue'
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -20,6 +22,10 @@ const router = createRouter({
       path: '/water',
       name: 'water',
       component: WaterView
+    },{
+      path: '/waterlight',
+      name: 'waterlight',
+      component: AnimationLight
     },
   ]
 })
